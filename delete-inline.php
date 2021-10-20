@@ -6,7 +6,7 @@ include("config.php");
 $sql = "DELETE FROM student  WHERE sid = {$stu_id}";
 $result = mysqli_query($conn,$sql) or die("query unsuccessful");
 
-header("location:http://localhost/my-crud/CRUD/index.php");
+header("location:index.php");
 
 mysqli_close($conn);
 ?>
